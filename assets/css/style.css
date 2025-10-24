@@ -86,6 +86,7 @@ h4{
     background-color: var(--color4);
     color: var(--color2);
 }
+
 .padding-sm{
     padding: 10px 0;
 }
@@ -97,7 +98,13 @@ h4{
 }
 .img-fluid{
     width: 100%;
-    height: block;
+    height: auto;
+    display: block;
+}
+.video-fluid{
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
 }
 .box-icon{
     display: inline-block;
@@ -121,7 +128,6 @@ h4{
     flex-direction: row;
     flex-wrap: wrap;
     /*padding: 0 15px;*/
-    gap: 20px;
 }
 .row-between{
     justify-content: space-between;
@@ -146,7 +152,13 @@ h4{
     flex-basis: 60%;
     max-width: 60%;
 }
-
+.col-100{
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.gap-20{
+    gap: 20px;
+}
 .service-button{
     display: inline-block;
     text-decoration: none;
@@ -220,4 +232,35 @@ h4{
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
+}
+.form-control{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    font: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color1);
+}
+.form-contact textarea{
+    resize: none;
+}
+.form-link-acepto{
+    color: var(--color1);
+}
+.form-submit{
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 15px 30px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.form-submit:hover{
+    background-color: var(--color3);
 }
