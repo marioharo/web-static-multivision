@@ -264,3 +264,64 @@ h4{
 .form-submit:hover{
     background-color: var(--color3);
 }
+/* Activar grid container */
+.grid-service{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px 0;
+}
+.grid-card-service{
+    border: 1px solid var(--color4);
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.grid-card-service h3{
+    text-align: center;
+    color: var(--color1);
+}
+.grid-card-service img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.grid-card-service p{
+    margin: 15px 0;
+}
+.grid-card-service a{
+    color: var(--color2);
+    background-color: var(--color1);
+    padding: 5px 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* estilizar tabla */
+.table-fees{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-fees thead{
+    background-color: var(--color1);
+    color: var(--color2);
+}
+.table-fees th, td{
+    padding: 10px;
+    border: 1px solid var(--color1);
+    text-align: center;
+}
+.table-fees tfoot td{
+    text-align: end;
+    font-weight: bold;
+    font-style: italic;
+}
+.table-fees caption{
+    caption-side: bottom;
+}
